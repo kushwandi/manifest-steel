@@ -1,0 +1,99 @@
+.login-container {
+    min-height: 100vh;
+}
+.bg-toyota {
+    background-color: #EB0A1E;
+}
+.logo-section {
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+    animation: slideIn 0.5s ease-in-out;
+    width: 25%; /* 1/4 of desktop width */
+    max-width: 400px; /* Maximum width for very large screens */
+    min-width: 250px; /* Minimum width for readability */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-alert {
+        width: 90%; /* Wider on mobile */
+        right: 5%;
+    }
+}
+
+.container-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-form {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+.department-badge {
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+.status-badge {
+    padding: 5px 15px;
+}
+
+.sidebar {
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-link {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #f8f9fa;
+    color: #EB0A1E;
+}
+
+.sidebar-link.active {
+    background-color: #EB0A1E;
+    color: white;
+}
+
+/* Custom styles for navbar */
+.navbar-toyota {
+    background-color: #EB0A1E;
+}
+
+.content {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+}
